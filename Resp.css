@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media only screen and (min-width: 375px){
+  main{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('/bg-intro-mobile.png');
+    display: grid;
+  }
+}
+@media only screen and (min-width: 1440px){
+  body{
+    background-image: url('/favicon-32x32.png');
+  }
+  main{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('/bg-intro-desktop.png');
+    display: flex;
+  }
+}
+body{
+  font-size:16px;
+  font-family: 'poppins', Arial;
+}
+main{
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+h2{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+p{
+  font-weight: 400;
+  
+}
+
+ul{
+  list-style: none;
+}
+li{
+  margin: 20px;
+  font-weight: 600;
+}
+.first{
+  height: 120px;
+  margin-top: 40px;
+  text-align: center;
+  margin: 50px;
+  color:white;
+}
+.trouble{
+  margin: 40px;
+  margin-top: 30px;
+  padding: 20px;
+  
+  
+}
+.top{
+  background-color: hsl(248, 32%, 49%);
+  padding: 30px;
+  border-radius:10px;
+  width: 300px;
+  color:  white;
+  box-shadow:0px 4px;
+  font-weight:400;
+}
+.top :hover{
+  background-color: hsl(249, 10%, 26%);
+}
+.bottom {
+  background-color: hsl(154, 59%, 51%);
+  padding: 20px;
+  border-radius:10px;
+  font-weight: 500;
+  color: white;
+}
+.bottom :active{
+  background-color: hsl(0, 100%, 74%);
+}
+
+form {
+  background-color: white;
+  padding-top: 10px;
+  width: 300px;
+  height: 400px;
+  margin-top:20px;
+  border-radius:10px;
+  text-align: center;
+
+}
+input{
+  display: block
+  width:400px;
+  height:40px;
+  text-indent: 10px;
+}
+  
