@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
+
 }
 
 @media only screen and (min-width: 375px){
@@ -10,6 +12,13 @@
     background-color: hsl(0, 100%, 74%);
     background-image: url('/bg-intro-mobile.png');
     display: grid;
+  }
+  .first{
+    height: 120px;
+    margin-top: 40px;
+    text-align: center;
+    margin: 50px;
+    color:white;
   }
 }
 @media only screen and (min-width: 1440px){
@@ -20,6 +29,15 @@
     background-color: hsl(0, 100%, 74%);
     background-image: url('/bg-intro-desktop.png');
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .first{
+    width: 700px; 
+  }
+  form{
+    padding: 20px;
   }
 }
 body{
@@ -37,7 +55,6 @@ h2{
 }
 p{
   font-weight: 400;
-  
 }
 
 ul{
@@ -47,13 +64,7 @@ li{
   margin: 20px;
   font-weight: 600;
 }
-.first{
-  height: 120px;
-  margin-top: 40px;
-  text-align: center;
-  margin: 50px;
-  color:white;
-}
+
 .trouble{
   margin: 40px;
   margin-top: 30px;
@@ -96,8 +107,17 @@ form {
 }
 input{
   display: block
-  width:400px;
+  width: 400px;
   height:40px;
   text-indent: 10px;
 }
-  
+
+button:hover{
+background-color: blue;
+cursor: pointer;
+}
+
+button:active{
+  background-color: red;
+  cursor: pointer;
+}
